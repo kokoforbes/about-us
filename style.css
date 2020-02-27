@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"); */
 
 :root {
   --primary-color: #000000;
@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
 }
 
 html,
@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   display: flex;
   flex-direction: column;
 }
@@ -56,21 +56,19 @@ body {
   display: none;
 }
 
-.carousel {
+.carousel-inner {
   max-height: 1300px !important;
+  margin-bottom: -500px !important;
 }
 
 .carousel-item {
   height: 1200px;
 }
 
-/* .carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
+.carousel-item img {
+  object-fit: contain;
   min-height: 500px;
-} */
+}
 /* .profile {
   width: 300px;
   height: 400px;
@@ -95,7 +93,7 @@ ol {
   margin-left: 20px;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: repeat(3, 400px); */
   justify-content: center;
 }
